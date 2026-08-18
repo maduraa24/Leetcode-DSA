@@ -2,6 +2,7 @@ class Solution {
     public boolean containsDuplicate(int[] nums) {
       //create a HashSet to store elements from the array
         HashSet<Integer> seenNumbers=new HashSet<>();
+      
       //Iterate through each element in the array
         for(int num:nums){
           //check if the element is alreday in the HashSet
@@ -11,6 +12,7 @@ class Solution {
           //add elements to the HashSet if no duplicate is found
           seenNumbers.add(num);
         }
+        //if we iterate through the entire array and find no duplicate,then retun false. 
         return false;
     }
 }
