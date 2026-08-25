@@ -1,6 +1,6 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        if(k == nums.length){
+      if(k == nums.length){
             return nums;
         }
         
@@ -19,11 +19,11 @@ class Solution {
             }
         }
         
-        
         int[] ans = new int[k];
         for(int i=0; i<k; i++){
             ans[i] = heap.poll();
         }
-        return ans;
+        
+        return ans;  
     }
 }
