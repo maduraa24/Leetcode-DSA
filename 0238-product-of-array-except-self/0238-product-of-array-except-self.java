@@ -1,6 +1,6 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-              int [] result = new int[nums.length];
+        int [] result = new int[nums.length];
         
         Arrays.fill(result, 1);
         
@@ -15,7 +15,6 @@ class Solution {
             result[i] = postFix * result[i];
             postFix = postFix * nums[i];
         }
-        
         return result;  
     }
 }
