@@ -6,7 +6,7 @@ class Solution {
 
         int[] s1Map = new int[26];
         int[] s2Map = new int[26];
-        
+
         // Initialize frequency maps for s1 and the first window of s2
         for (int i = 0; i < s1.length(); i++) {
             s1Map[s1.charAt(i) - 'a']++;
@@ -33,6 +33,6 @@ class Solution {
                 return false;
             }
         }
-        return true; 
+        return true;
     }
 }
