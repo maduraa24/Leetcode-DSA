@@ -9,7 +9,6 @@ class Solution {
                 break;
             }
         }
-        
         if(contains == 0){
             return 1;
         }
