@@ -3,7 +3,7 @@ class Solution {
         if (s1.length() > s2.length()) {
             return false;
         }
-
+        
         int[] s1Map = new int[26];
         int[] s2Map = new int[26];
 
