@@ -22,3 +22,5 @@ class Solution {
        return true;
     }
 }
+//time=0(n)
+//space=0(1)
