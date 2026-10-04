@@ -6,9 +6,9 @@ class Solution {
             return nums;
         }
 
-        Map<Integer, Integer> hash = new HashMap<>();
+        Map<Integer, Integer> hash = new HashMap<>(); //create a hashmap for number and occurence
 
-        // Visit every number in the input array
+        // Visit every number in the input array ie nums
         for (int n : nums) {
 
             // Increase the frequency of n by 1
@@ -16,10 +16,10 @@ class Solution {
             hash.put(n, hash.getOrDefault(n, 0) + 1);
         }
 
-        Queue<Integer> heap = new PriorityQueue<>(
-                (a, b) -> hash.get(a) - hash.get(b));
+        Queue<Integer> heap = new PriorityQueue<>( //creating priority queue
+                (a, b) -> hash.get(a) - hash.get(b)); //comparing the freq of 2 numbers
 
-        // Visit each distinct number in the frequency map
+        // Visit each distinct number in the frequency map ie hash map
         for (int n : hash.keySet()) {
             // Add this number to the heap
             heap.add(n);
