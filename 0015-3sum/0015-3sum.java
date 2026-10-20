@@ -8,9 +8,7 @@ class Solution {
                 twoSum2(nums, i, result);
             }
         }
-        
         return result;
-        
     }
     
     void twoSum2(int[] nums, int i, List<List<Integer>> result){
