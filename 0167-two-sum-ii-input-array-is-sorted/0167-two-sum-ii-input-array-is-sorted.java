@@ -5,10 +5,12 @@ class Solution {
 
         while (left < right) {
             if (numbers[left] + numbers[right] > target) {
-                right = right - 1;
+                //right = right - 1;
+                right--;
             } else if (numbers[left] + numbers[right] < target) {
-                left = left + 1;
-            } else {
+                //left = left + 1;
+                left++;
+            } else if(numbers[left] + numbers[right] == target){
                 return new int[] { left + 1, right + 1 };
             }
         }
