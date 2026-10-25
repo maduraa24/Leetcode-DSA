@@ -10,7 +10,7 @@ class Solution {
             } else if (numbers[left] + numbers[right] < target) {
                 //left = left + 1;
                 left++;
-            } else if(numbers[left] + numbers[right] == target){
+            } else if (numbers[left] + numbers[right] == target) {
                 return new int[] { left + 1, right + 1 };
             }
         }
