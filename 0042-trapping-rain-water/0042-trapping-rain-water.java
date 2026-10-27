@@ -12,8 +12,8 @@ class Solution {
         while (left < right) {
 
             if (height[left] < height[right]) {
-            // If the left block is shorter than the right block,
-            // process the left side
+                // If the left block is shorter than the right block,
+                // process the left side
 
                 if (height[left] >= leftMax) { // Check if the current left block is a new tallest block
                     leftMax = height[left];// Update the tallest block seen from the left
