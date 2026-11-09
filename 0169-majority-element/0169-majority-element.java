@@ -4,7 +4,7 @@ class Solution {
 
         for(int i=1;i<nums.length;i++){
             if(votes==0){
-                votes++;
+                votes=1;
                 majority=nums[i];
             }
             else if(majority==nums[i]){
