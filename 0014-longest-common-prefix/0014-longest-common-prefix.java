@@ -15,7 +15,7 @@ class Solution {
 
         // Compare characters of first and last strings
         for (int i = 0; i < first.length(); i++) {
-            if (first.charAt(i) != last.charAt(i)) {
+            if (i >= last.length() || first.charAt(i) != last.charAt(i)) {
                 break;
             }
             // Add matching character
