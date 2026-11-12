@@ -14,19 +14,15 @@ class Solution {
 
             if (count1 > 0 && num == candidate1) {
                 count1++;
-            }
-            else if (count2 > 0 && num == candidate2) {
+            } else if (count2 > 0 && num == candidate2) {
                 count2++;
-            }
-            else if (count1 == 0) {
+            } else if (count1 == 0) { //when we get a new candidate
                 candidate1 = num;
                 count1 = 1;
-            }
-            else if (count2 == 0) {
+            } else if (count2 == 0) { //when we get a new candidate
                 candidate2 = num;
                 count2 = 1;
-            }
-            else {
+            } else { //if num is not equal to candidate
                 count1--;
                 count2--;
             }
@@ -39,8 +35,7 @@ class Solution {
         for (int num : nums) {
             if (num == candidate1) {
                 count1++;
-            }
-            else if (num == candidate2) {
+            } else if (num == candidate2) {
                 count2++;
             }
         }
