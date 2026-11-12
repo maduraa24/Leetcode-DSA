@@ -18,7 +18,7 @@ class Solution {
 
             // Stop if last string is shorter
             // or characters don't match
-            if (i >= last.length() || first.charAt(i) != last.charAt(i)) {
+            if (first.charAt(i) != last.charAt(i)) {
                 break;
             }
 
