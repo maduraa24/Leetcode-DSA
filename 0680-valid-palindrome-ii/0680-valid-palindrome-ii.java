@@ -15,14 +15,26 @@ class Solution {
         return true;
     }
 
-    private boolean isPalindrome(String s, int left,int right){
-        while(left<right){
-            if(s.charAt(left)==s.charAt(right)){
-                left++;
-                right--;
-            }else return false;
+//     private boolean isPalindrome(String s, int left,int right){
+//         while(left<right){
+//             if(s.charAt(left)==s.charAt(right)){
+//                 left++;
+//                 right--;
+//             }else return false;
+//         }
+//         return true;
+//     }
+// }
+
+ public boolean isPalindrome(String s, int left, int right){
+        while(left < right){
+            if(s.charAt(left) != s.charAt(right)){
+                return false;
+            }
+        
+            left++;
+            right--;
         }
         return true;
     }
-    //return true;
 }
