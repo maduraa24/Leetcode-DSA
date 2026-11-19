@@ -8,8 +8,8 @@ class Solution {
                 left++;
                 right--;
             }else{
-                return isPalindrome(s,left+1,right)||
-                       isPalindrome(s,left,right-1);
+                return isPalindrome(s,left,right-1)||
+                       isPalindrome(s,left+1,right);
             }
         }
         return true;
