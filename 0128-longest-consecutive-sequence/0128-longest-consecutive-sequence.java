@@ -21,3 +21,6 @@ class Solution {
         return longest;
     }
 }
+
+//space=0(n)
+//time=0(n)
